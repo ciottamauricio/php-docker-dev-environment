@@ -1,0 +1,23 @@
+services:
+  web:
+    build: ./apache-php      
+    container_name: apache_php
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/var/www/html
+      - ./xdebug-profiler:/var/log/xdebug-profiler
+    extra_hosts:
+      - "host.docker.internal:host-gateway"        
+    depends_on:
+      - db  
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"

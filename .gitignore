@@ -1,0 +1,32 @@
+# Exclude project folders (since you already have them on GitHub)
+html/
+laravel12/
+
+# Exclude data and logs that shouldn't be tracked
+xdebug-profiler/
+**/logs/
+**/data/
+
+# Environment files (contain sensitive data)
+.env
+.env.local
+.env.production
+*.env
+
+# Windows Zone Identifier files (security metadata)
+*:Zone.Identifier
+*.Zone.Identifier
+*:zone.identifier
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker volumes and runtime data
+volumes/
