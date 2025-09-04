@@ -7,7 +7,7 @@ A complete Docker Compose setup for PHP 8.2 development with Apache, GraphQL (Li
 1. **Clone this Docker environment:**
     
     ```
-    git clone <https://github.com/yourusername/docker-php-environment.git>
+    git clone https://github.com/ciottamauricio/php-docker-dev-environment
     cd docker-php-environment    
     ```
     
