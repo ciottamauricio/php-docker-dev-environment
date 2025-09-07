@@ -16,9 +16,6 @@ A complete Docker Compose setup for PHP 8.2 development with Apache, GraphQL (Li
     ```
     # Clone your main project into the html folder
     git clone <https://github.com/yourusername/your-main-project.git> html
-    
-    # Clone your Laravel project into laravel12 folder (if needed)
-    git clone <https://github.com/yourusername/your-laravel-project.git> laravel12    
     ```
     
 3. **Start the environment:**
