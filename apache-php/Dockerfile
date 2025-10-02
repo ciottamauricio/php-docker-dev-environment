@@ -46,3 +46,4 @@ WORKDIR /var/www/html
 # Install Lighthouse GraphQL
 RUN composer require nuwave/lighthouse mll-lab/laravel-graphql-playground
 
+RUN pecl install redis && docker-php-ext-enable redis
